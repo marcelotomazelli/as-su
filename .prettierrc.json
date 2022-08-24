@@ -1,0 +1,9 @@
+{
+    "tabWidth": 4,
+    "useTabs": false,
+    "trailingComma": "es5",
+    "endOfLine": "crlf",
+    "semi": true,
+    "bracketSpacing": true,
+    "editorconfig": true
+}

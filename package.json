@@ -1,0 +1,53 @@
+{
+    "name": "as-su",
+    "displayName": "As Su in Remote - SSH",
+    "description": "Provides execution of actions as su when using Remote - SSH extension",
+    "version": "0.0.1",
+    "publisher": "marcelotomazelli",
+    "engines": {
+        "vscode": "^1.70.0"
+    },
+    "repository": {
+        "url": "https://github.com/marcelotomazelli/as-su",
+        "type": "git"
+    },
+    "bugs": {
+        "url": "https://github.com/marcelotomazelli/as-su/issues"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:as-su.helloWorld"
+    ],
+    "keywords": [
+        "remote",
+        "ssh",
+        "su"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "as-su.helloWorld",
+                "title": "Hello World"
+            }
+        ]
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.70.0",
+        "@types/glob": "^7.2.0",
+        "@types/mocha": "^9.1.1",
+        "@types/node": "16.x",
+        "eslint": "^8.20.0",
+        "glob": "^8.0.3",
+        "mocha": "^10.0.0",
+        "typescript": "^4.7.4",
+        "@vscode/test-electron": "^2.1.5"
+    }
+}
